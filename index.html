@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>deepdive — შემოთავაზება აგროჰაბისთვის</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --green:#00D0A3; --black:#0A0A0A; --grey:#5A5A5A; --light:#F2FBF8; --line:#E4E4E4; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Noto Sans Georgian','Sylfaen',sans-serif; background:#fff; color:var(--black); }
+  .topbar { height:6px; background:var(--green); }
+  .page { max-width:840px; margin:0 auto; padding:44px 32px 0; }
+
+  .header { display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap; }
+  .wordmark { font-family:'Inter','Noto Sans Georgian',sans-serif; font-size:28px; font-weight:800; letter-spacing:-0.5px; }
+  .wordmark span { color:var(--green); }
+  .doc-label { text-align:right; }
+  .kicker { font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--grey); font-weight:600; }
+  .to { font-size:16px; font-weight:700; margin-top:4px; }
+  .to span { color:var(--green); }
+
+  .rule { height:2px; background:var(--black); margin:22px 0 26px; }
+
+  .hook { font-size:17px; line-height:1.55; font-weight:500; max-width:700px; }
+  .hook b { font-weight:700; }
+
+  .values { list-style:none; display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; }
+  .values li { flex:1; min-width:200px; font-size:13.5px; line-height:1.45; font-weight:600;
+               padding:12px 14px; border-left:4px solid var(--green); background:var(--light); border-radius:4px; }
+
+  h2 { font-size:12px; letter-spacing:1.5px; text-transform:uppercase; font-weight:800;
+       margin:36px 0 10px; display:flex; align-items:center; gap:10px; }
+  h2::before { content:""; width:28px; height:4px; background:var(--green); flex-shrink:0; }
+  .lead { font-size:14px; line-height:1.55; color:var(--grey); max-width:720px; margin-bottom:18px; }
+
+  .card { border:1px solid var(--line); border-left:5px solid var(--green); border-radius:6px;
+          padding:18px 20px; margin-bottom:14px; }
+  .card.feature { background:var(--light); border-color:var(--green); }
+  .card h3 { font-size:16px; font-weight:700; margin-bottom:10px; display:flex; align-items:baseline; gap:10px; }
+  .card h3 .num { color:var(--green); font-family:'Inter',sans-serif; font-weight:800; }
+  .card ul { list-style:none; }
+  .card li { font-size:13.5px; line-height:1.5; color:var(--grey); padding-left:18px; position:relative; margin-bottom:5px; }
+  .card li::before { content:"→"; position:absolute; left:0; color:var(--green); font-weight:700; }
+  .tools { margin-top:10px; font-size:12.5px; font-weight:600; }
+  .tools .lbl { color:var(--grey); font-weight:600; }
+  .tools .val { color:var(--black); }
+  .tools .dot { color:var(--green); font-weight:800; }
+
+  .deliver { margin-top:20px; background:var(--black); color:#fff; border-radius:8px; padding:18px 22px;
+             font-size:14px; line-height:1.55; }
+  .deliver b { color:var(--green); }
+
+  .footer { margin-top:36px; padding:18px 0 30px; border-top:1px solid var(--line); font-size:13.5px; line-height:1.7; }
+  .footer b { font-weight:700; }
+  .footer a { color:var(--black); text-decoration:none; border-bottom:2px solid var(--green); }
+  .dot { color:var(--green); font-weight:800; }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<div class="page">
+
+  <div class="header">
+    <div class="wordmark">deepdive <span>Georgia</span></div>
+    <div class="doc-label">
+      <div class="kicker">კვლევითი შემოთავაზება</div>
+      <div class="to">მომზადებულია <span>აგროჰაბისთვის</span></div>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="hook">
+    <b>deepdive</b> არის მარკეტინგული და კვლევითი სააგენტო. მარკეტინგისა და გამოყენებითი კვლევის მეთოდების სინთეზით, ქართულ კომპანიებს ვეხმარებით:
+  </div>
+  <ul class="values">
+    <li>პრობლემების არსის გარკვევასა და გადაჭრაში</li>
+    <li>მტკიცებულებებზე დაფუძნებული გადაწყვეტილებების მიღებაში</li>
+    <li>ახალი ინიციატივებისთვის ნიადაგის მოსინჯვაში</li>
+  </ul>
+
+  <h2>რას გთავაზობთ</h2>
+  <div class="lead">
+    მოკვლევის საფუძველზე გამოვკვეთეთ საკითხები, რომლებიც აგროჰაბის კომერციული სტრატეგიისთვის შეიძლება მნიშვნელოვანი იყოს. გთავაზობთ ჩვენს სერვისს მათ გადასაჭრელად:
+  </div>
+
+  <div class="card feature">
+    <h3><span class="num">01</span> ქუთაისისა და ბათუმის ფილიალების მომხმარებლების კვლევა</h3>
+    <ul>
+      <li>რა წარმოდგენები და შეხედულებები აქვს ადგილობრივ მოსახლეობას აგროჰაბსა და მის ლოკალურ კონკურენტებზე?</li>
+      <li>რა მოსწონთ და რა — არა? რატომ?</li>
+      <li>რა მიზეზებს ასახელებენ ისინი, ვინც რეგულარულად დადის კონკურენტ მაღაზიებში, თუმცა — არა აგროჰაბში?</li>
+      <li>რა ცვლილებების შემთხვევაში ივლიდნენ ისინი აგროჰაბში რეგულარულად?</li>
+    </ul>
+    <div class="tools"><span class="lbl">ინსტრუმენტები:</span> <span class="val">ფოკუს ჯგუფები <span class="dot">●</span> სიღრმისეული ინტერვიუები <span class="dot">●</span> რაოდენობრივი გამოკითხვა (≈400 რესპონდენტი)</span></div>
+  </div>
+
+  <div class="card feature">
+    <h3><span class="num">02</span> მომხმარებლების სტატისტიკური კვლევა</h3>
+    <ul>
+      <li>თბილისის, ბათუმისა და ქუთაისის მოსახლეობის რა პროცენტს სმენია აგროჰაბის შესახებ?</li>
+      <li>რა პროცენტი ყოფილა აგროჰაბში ბოლო ერთ თვეში? რა პროცენტი დადის რეგულარულად და როგორია მათი სოციალურ-დემოგრაფიული პროფილი?</li>
+      <li>რა პროცენტი დადიოდა რეგულარულად და აღარ დადის? რა არის ამის მთავარი მიზეზი?</li>
+      <li>რა მთავარ მიზეზს ასახელებენ ისინი, ვინც აგროჰაბში რეგულარულად არ დადის?</li>
+    </ul>
+    <div class="tools"><span class="lbl">ინსტრუმენტი:</span> <span class="val">რაოდენობრივი გამოკითხვა (≈1000 რესპონდენტი)</span></div>
+  </div>
+
+  <div class="card feature">
+    <h3><span class="num">03</span> აღქმების კვლევა</h3>
+    <ul>
+      <li>როგორია მოსახლეობის აღქმები აგროჰაბზე — დადებითიც და უარყოფითიც?</li>
+      <li>რას ეფუძნება უარყოფითი აღქმები (მაგ. „მაღალი ფასები") — პირად გამოცდილებას, ახლობლების შეფასებებს თუ სხვას? რამდენად ასახავს ისინი რეალობას?</li>
+      <li>რას შეუძლია შეცვალოს უარყოფითი აღქმები აგროჰაბის შესახებ?</li>
+    </ul>
+    <div class="tools"><span class="lbl">ინსტრუმენტები:</span> <span class="val">ფოკუს ჯგუფები <span class="dot">●</span> სიღრმისეული ინტერვიუები</span></div>
+  </div>
+
+  <div class="deliver">
+    თითოეული კვლევის შედეგად მიიღებთ: <b>მიგნებების პრეზენტაციას</b> და <b>წერილობით დოკუმენტს</b> — კვლევის შედეგებითა და სამოქმედო გეგმით.
+  </div>
+
+  <div class="footer">
+    <div><b>საკონტაქტო ინფორმაცია:</b> <a href="mailto:team@ddive.ge">team@ddive.ge</a></div>
+    <div><b>ინსტაგრამი:</b> <a href="https://www.instagram.com/deepdivegeorgia/?utm_source=ig_web_button_share_sheet">instagram.com/deepdivegeorgia</a></div>
+  </div>
+
+</div>
+</body>
+</html>
